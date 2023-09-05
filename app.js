@@ -7,9 +7,6 @@ const copy_btn = document.getElementById('copy')
 btn.addEventListener('click', short)
 copy_btn.addEventListener('click', copyrigth)
 
-
-
-
 async function short(){
   
     let shortURL = await fetch(`https://api.shrtco.de/v2/shorten?url=${longURL.value}`)
